@@ -1,0 +1,3 @@
+Implementar el progress bar en un hilo nuevo para la próxima clase
+
+usar getPosition del reproductor como base
