@@ -22,8 +22,9 @@ public class Frame extends javax.swing.JFrame {
 //        Calendar cal = Calendar.getInstance();
 //        LocalDateTime ldt = LocalDateTime.now();
 //        txtHora.setText(ldt.toString());
+          txtCrono.setText("0");
         new Thread(new HoraRunnable(txtHora)).start();
-        new Thread(new CronometroRunnable(txtCrono)).start();
+       // new Thread(new CronometroRunnable(txtCrono)).start();
         crono = new CronometroRunnable(txtCrono);
         tCrono = new Thread(crono);
         tCrono.start();
